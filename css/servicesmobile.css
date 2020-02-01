@@ -9,8 +9,13 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/*Your Code Starts Here!!!!*/
 
-
+body{
+    max-width: 5000px;
+    width: 100%;
+    margin: 0;
+}
 
 h1{
     font-size: 50px;
@@ -38,9 +43,10 @@ hr {
   button{
         background-color: white;
         border: 1px  black solid;
-        padding-right: 3%;
-        padding-left: 3%;
+        padding-right: 10%;
+        padding-left: 10%;
   }
+
 .nav_bar{
     display: flex;
     flex-direction: column-reverse;
@@ -66,7 +72,6 @@ address{
 
     
 }
-
 
 .navitems a{
     text-decoration:none;
