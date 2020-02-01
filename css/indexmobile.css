@@ -10,7 +10,6 @@
 /* HTML5 display-role reset for older browsers */
 
 
-
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -38,10 +37,9 @@ h1{
 hr {
     border: 0;
     clear:both;
-    display:block;
-    width: 96%;               
+    display:block;               
     background-color:grey;
-    height: 1px;
+    height: 3px;
   }
 
   p{
@@ -50,7 +48,7 @@ hr {
   }
 
   h3{
-      margin: 1%;
+      margin: 2% 1%;
       margin-bottom: 2%;
   }
   button{
@@ -60,14 +58,29 @@ hr {
         padding-left: 10%;
   }
 
+  
 .nav_bar{
     display: flex;
     flex-direction: column-reverse;
-   
+    flex-wrap: wrap-reverse;
     justify-content: space-around;
 
 
 
+}
+
+.nav_bar a{
+    border-bottom: solid grey 1px;
+   
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom:3%;
+    
+}
+
+.navimg{
+    border-top: none;
 }
 
 address{
@@ -81,6 +94,7 @@ address{
     padding-top: 4%;
     flex-direction: column-reverse;
     background-color: white;
+    
 
     
 }
@@ -90,9 +104,11 @@ address{
     margin: 0 auto;
     color: black;
     background-color: white;
+    text-decoration: underline grey 2px;
 
     
 }
+
 
 
 .innovsec img{
@@ -113,6 +129,7 @@ address{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 6%;
 }
 
 .middle-div img{
@@ -132,13 +149,20 @@ address{
 /*Tablet Media Query min width 500px*/
 
 @media(min-width:500px){
-    .container{
-        margin: 0 auto;
+
+    .nav_bar  a{
+        border: none;
     }
+
+    .bodycontainer{
+        margin: 0 auto;
+        width: 90%;
+    }
+    
     .nav_bar{
-        flex-direction: row;
-        margin: 2%;
-        justify-content: space-between;
+        flex-direction: column-reverse;
+        margin: 0 2% 0 2%;
+        justify-content: center;
     }
 
     .navitems{
@@ -152,16 +176,84 @@ address{
     }
 
     .navitems img{
-        min-width: 80%;
+        
         margin-left: 3%;
     }
 
     .innovsec{
         width: 100%;
+        
+        
     }
 
     .indexsec1{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+    }
+
+    .indexsec2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .indexsec2 div{
+        width: 33%;
+    }
+}
+
+@media(min-width: 800px){
+
+    .bodycontainer{
+        margin: 0 auto;
+    }
+
+    .navitems img {
+        display: flex;
+        flex-direction: column-reverse;
+
+
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .nav_bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+  
+
+    
+
+    .bodycontainer{
+        max-width: 1100px;
+    }
+    .innovsec img{
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+        visibility: visible;
+    }
+
+    .innovsec{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    h1{
+        font-size: 5em;
+    }
+
+    .middle-div{
+        display: flex;
+    }
+    .middle-div img{
+        margin-right: 2%;
+        margin-left: 2%;
+        margin: 0 auto;
     }
 }
