@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5 {
 
 /*Your Code Starts Here!!!!*/
 
+
 body{
     max-width: 5000px;
     width: 100%;
@@ -29,6 +30,11 @@ hr {
     width: 96%;               
     background-color:grey;
     height: 1px;
+    
+  }
+
+  #invisible{
+    visibility: hidden;
   }
 
   p{
@@ -45,6 +51,7 @@ hr {
         border: 1px  black solid;
         padding-right: 10%;
         padding-left: 10%;
+        margin: 0 auto;
   }
 
 .nav_bar{
@@ -82,7 +89,125 @@ address{
     
 }
 
+.mainsec{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.maindiv{
+    width: 95%;
+    border-bottom: black dotted 2px;
+}
+
 .bodycontainer{
+    margin: 0 auto;
+
+}
+
+#imgbanner{
+    display: flex;
+    margin-top: 2%;
+}
+
+#imgbanner img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
     margin: 0 auto;
 }
 
+@media(min-width: 500px){
+
+    .bodycontainer{
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+
+    .nav_bar {
+        flex-direction: row;
+        margin: 2%;
+        justify-content: space-between;
+    }
+
+    .nav_bar {
+        flex-direction: row;
+        margin: 2%;
+        justify-content: space-between;
+    }
+    .navitems a {
+        text-decoration: none;
+        margin: 0 auto;
+        color: black;
+        background-color: white;
+        margin-right: 3%;
+        
+    }
+
+    .navitems{
+        
+        justify-content: space-evenly;
+        border: none;
+        flex-direction: row;
+    }
+
+    .mainsec {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .maindiv{
+        
+        margin-bottom: 4%;
+        padding: 3%;
+    
+
+    }
+
+}
+
+@media(min-width: 800px){
+
+    #invisible{
+        visibility:;
+    }
+
+    .bodycontainer{
+        max-width: 1100px;
+        padding-left: 2%;
+        padding-right: 2%;
+        
+    }
+    .mainsec {
+        width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        margin: 2%;
+        margin: 0 auto;
+    }
+
+    .maindiv {
+       width: 39%;
+        border: solid 2px black;
+        margin-bottom: 4%;
+        padding: 3%;
+        box-shadow: 10px 5px;
+    }
+
+    .nav_bar {
+        flex-direction: row;
+        margin: 2%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .navitems{
+        width: 50%;
+    }
+    
+    
+}

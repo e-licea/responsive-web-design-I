@@ -38,10 +38,9 @@ h1{
 hr {
     border: 0;
     clear:both;
-    display:block;
-    width: 96%;               
+    display:block;               
     background-color:grey;
-    height: 1px;
+    height: 3px;
   }
 
   p{
@@ -50,7 +49,7 @@ hr {
   }
 
   h3{
-      margin: 1%;
+      margin: 2% 1%;
       margin-bottom: 2%;
   }
   button{
@@ -60,6 +59,7 @@ hr {
         padding-left: 10%;
   }
 
+  
 .nav_bar{
     display: flex;
     flex-direction: column-reverse;
@@ -91,6 +91,7 @@ address{
     margin: 0 auto;
     color: black;
     background-color: white;
+    text-decoration: underline grey 2px;
 
     
 }
@@ -134,13 +135,16 @@ address{
 /*Tablet Media Query min width 500px*/
 
 @media(min-width:500px){
+
     .bodycontainer{
         margin: 0 auto;
+        width: 90%;
     }
+    
     .nav_bar{
-        flex-direction: row;
-        margin: 2%;
-        justify-content: space-between;
+        flex-direction: column-reverse;
+        margin: 0 2% 0 2%;
+        justify-content: center;
     }
 
     .navitems{
@@ -160,11 +164,14 @@ address{
 
     .innovsec{
         width: 100%;
+        
+        
     }
 
     .indexsec1{
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .indexsec2{
@@ -174,13 +181,37 @@ address{
     }
 
     .indexsec2 div{
-        width: 30%;
+        width: 33%;
     }
 }
 
 @media(min-width: 800px){
+
     .bodycontainer{
-        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .navitems img {
+        display: flex;
+        flex-direction: column-reverse;
+
+
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .nav_bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+  
+
+    
+
+    .bodycontainer{
+        max-width: 1100px;
     }
     .innovsec img{
         max-width: 350px;
@@ -192,7 +223,7 @@ address{
     .innovsec{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     h1{
@@ -203,7 +234,8 @@ address{
         display: flex;
     }
     .middle-div img{
-        max-width: 1000px;
+        margin-right: 2%;
+        margin-left: 2%;
         margin: 0 auto;
     }
 }
